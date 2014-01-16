@@ -1,0 +1,52 @@
+// Получить гласные
+        function getWowel(arr){
+            var result = [];
+            op = arr.split('');
+
+            for (var i=0; i<op.length; i++){
+                if (    op[i] == 'а' || op[i] == 'у' || op[i] == 'о' || op[i] == 'ы' || op[i] == 'и' ||
+                        op[i] == 'э' || op[i] == 'я' || op[i] == 'ю' || op[i] == 'ё' || op[i] == 'е'){
+
+                    result.push( op[i] )
+                }
+            }
+            alert(result.join(''));
+        }
+
+        getWowel(array);
+
+
+// Получить согласные
+        function getConcordants (arr){
+            var result = [];
+            var op = arr.split('');
+
+            for (var i=0; i<op.length; i++){
+                if (    op[i] == 'б'|| op[i] == 'в'|| op[i] == 'г'|| op[i] == 'д'|| op[i] == 'ж'||
+                        op[i] == 'з'|| op[i] == 'й'|| op[i] == 'к'|| op[i] == 'л'|| op[i] == 'м'||
+                        op[i] == 'н'|| op[i] == 'п'|| op[i] == 'р'|| op[i] == 'с'|| op[i] == 'т'||
+                        op[i] == 'ф'|| op[i] == 'х'|| op[i] == 'ц'|| op[i] == 'ч'|| op[i] == 'ш'|| op[i] == 'щ'){
+                    result.push( op[i] )
+                }
+            }
+            alert(result.join(''));
+        }
+
+        getConcordants (array);
+
+
+
+// Счетчик количества слов
+       function countWords (arr){
+           var sum = 0;
+           var op = arr.split(' ');
+
+           for (var i=0; i<op.length; i++){
+               sum += 1;
+           }
+           alert(sum)
+       }
+
+       var count = 'Текст в котором нужно посчитать слова';
+
+       countWords (count)

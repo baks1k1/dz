@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+function fin (n){
+    return (n-2) > 1 ? n = fin(n-1)+fin(n-2): 1;
+}
+alert(fin(16))
+    </script>
+</head>
+<body>
+     <p>Начало документа </p>
+
+
+</body>
+</html>
